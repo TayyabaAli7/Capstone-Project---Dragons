@@ -24,7 +24,7 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(xpath="//span[text()='Add to Cart']")
 	public WebElement addToCartBttn;
 	
-	@FindBy(xpath="//span[text()='2']")
+	@FindBy(xpath="//span[@id='cartQuantity']")
 	public WebElement cartQty;
 	
 	@FindBy(xpath="//span[text()='Plugs and Outlets']")

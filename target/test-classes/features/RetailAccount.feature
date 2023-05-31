@@ -11,7 +11,7 @@ Feature: Retail Account Page
 
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'TekSchoolstudentnnk' and Phone '6415834756'
+    And User update Name 'TekSchoolstudentkm' and Phone '6415834756'
     And User click on Update button
     Then user profile information should be updated
 
@@ -20,25 +20,25 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1452369587412588 | TekSchools |               9 |           2026 |          897 |
+      | 1452369587416334 | TekSchools |               9 |           2026 |          897 |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
 
 
   Scenario: Verify User can edit Debit or Credit card
     When User click on Account option
-    And User selects the card ending with '588'    
+    And User selects the card ending with '334'    
     And User click on Edit option of card section
     And user edit information with below data
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 7852369841257829 | TekStudent |              8 |           2026 |          855 |
+      | 7852369841257978 | TekStudent |              8 |           2026 |          855 |
     And user click on Update Your Card button
     Then a message should be displayed ‘Payment Method updated Successfully’
 
   
   Scenario: Verify User can remove Debit or Credit card
     When User click on Account option
-    And User selects the card ending with '829'
+    And User selects the card ending with '978'
     And User click on remove option of card section
     Then payment details should be removed
  
