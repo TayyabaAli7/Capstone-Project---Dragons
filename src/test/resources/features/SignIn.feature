@@ -1,12 +1,12 @@
 
-
+@Capstone
 Feature: Sign in Feature
 
   Background: 
     Given User is on retail website
     When User click on Sign in option
 
-  @SignIn
+  
   Scenario: Verify user can sign in into Retail Application
     And User enter email 'student235@tekschool.us' and password 'Tek@School7'
     And User click on login button
