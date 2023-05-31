@@ -2841,3 +2841,13 @@
 2023-05-30 22:11:58,247 [main] INFO logger_file - Email and password were entered successfully
 2023-05-30 22:11:58,386 [main] INFO logger_file - Login button was clicked successfully
 2023-05-30 22:12:00,528 [main] INFO logger_file - User was successfully signed into account
+2023-05-30 22:27:56,451 [main] INFO logger_file - TekSchool logo is present
+2023-05-30 22:27:56,643 [main] INFO logger_file - Sign in button was clicked successfully
+2023-05-30 22:27:57,043 [main] INFO logger_file - Email and password were entered successfully
+2023-05-30 22:27:57,168 [main] INFO logger_file - Login button was clicked successfully
+2023-05-30 22:27:59,344 [main] INFO logger_file - User was successfully signed into account
+2023-05-30 22:31:26,320 [main] INFO logger_file - TekSchool logo is present
+2023-05-30 22:31:26,517 [main] INFO logger_file - Sign in button was clicked successfully
+2023-05-30 22:31:26,882 [main] INFO logger_file - Email and password were entered successfully
+2023-05-30 22:31:27,000 [main] INFO logger_file - Login button was clicked successfully
+2023-05-30 22:31:29,138 [main] INFO logger_file - User was successfully signed into account
