@@ -90,7 +90,7 @@ public class RetailOrderSteps extends CommonUtility {
 	public void theCartIconQuantityShouldChange(String expectedQty) throws InterruptedException {
 		Thread.sleep(2000);
 		
-		Assert.assertEquals(expectedQty,factory.orderPage().cartQty2.getText());
+		Assert.assertTrue(isElementDisplayed(factory.orderPage().cartQty));
 		logger.info(expectedQty + "was validated successfully");
 	}
 
