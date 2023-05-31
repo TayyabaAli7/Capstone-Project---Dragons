@@ -2851,3 +2851,8 @@
 2023-05-30 22:31:26,882 - logger_file -INFO - Email and password were entered successfully
 2023-05-30 22:31:27,000 - logger_file -INFO - Login button was clicked successfully
 2023-05-30 22:31:29,138 - logger_file -INFO - User was successfully signed into account
+2023-05-30 22:45:16,749 - logger_file -INFO - TekSchool logo is present
+2023-05-30 22:45:16,927 - logger_file -INFO - Sign in button was clicked successfully
+2023-05-30 22:45:17,290 - logger_file -INFO - Email and password were entered successfully
+2023-05-30 22:45:17,439 - logger_file -INFO - Login button was clicked successfully
+2023-05-30 22:45:19,569 - logger_file -INFO - User was successfully signed into account
