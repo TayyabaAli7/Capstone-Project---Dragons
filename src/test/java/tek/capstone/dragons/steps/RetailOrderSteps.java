@@ -40,7 +40,8 @@ public class RetailOrderSteps extends CommonUtility {
 	}
 
 	@When("User select quantity {string}")
-	public void userSelectQuantity(String itemQty) {
+	public void userSelectQuantity(String itemQty) throws InterruptedException {
+		Thread.sleep(2000);
 		selectByVisibleText(factory.orderPage().qtyDropdown,itemQty);
 		logger.info("Quantity of item was selected successfully");
 
@@ -78,14 +79,16 @@ public class RetailOrderSteps extends CommonUtility {
 
 
 	@When("User select Apex Legends quantity {string}")
-	public void userSelectsQuantity(String itemQty) {
+	public void userSelectsQuantity(String itemQty) throws InterruptedException {
+		Thread.sleep(2000);
 		selectByVisibleText(factory.orderPage().qtyDropdown,itemQty);
 		logger.info( itemQty +"was selected successfully");
 
 	}
 
 	@Then("the cart icon quantity Apex Legends should change to {string}")
-	public void theCartIconQuantityShouldChange(String expectedQty) {
+	public void theCartIconQuantityShouldChange(String expectedQty) throws InterruptedException {
+		Thread.sleep(2000);
 		
 		Assert.assertEquals(expectedQty,factory.orderPage().cartQty2.getText());
 		logger.info(expectedQty + "was validated successfully");

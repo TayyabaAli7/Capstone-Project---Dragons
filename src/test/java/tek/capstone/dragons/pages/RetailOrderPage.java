@@ -15,7 +15,7 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(id="search")
 	public WebElement allDepartmentDropdown;
 	
-	@FindBy(xpath="//img[@class='image']")
+	@FindBy(xpath="//img[@alt='Kasa Outdoor Smart Plug']")
 	public WebElement plugImg;
 	
 	@FindBy(xpath="//select[@class='product__select']")
@@ -48,7 +48,7 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(xpath="//span[text()='Video Games']")
 	public WebElement videoGames;
 	
-	@FindBy(xpath="//img[@class='image']")
+	@FindBy(xpath="//img[@alt='Apex Legends - 1,000 Apex Coins']")
 	public WebElement apexLegends;
 	
 	@FindBy(xpath="//span[text()='5']")
