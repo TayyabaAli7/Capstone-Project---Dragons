@@ -125,7 +125,9 @@ public class RetailOrderSteps extends CommonUtility {
 
 	@When("User click on first order in list")
 	public void userClickOnFirstOrderInList() {
-		click(factory.orderPage().itemInOrder);
+		if(factory.orderPage().showDetails.isDisplayed()) {
+			click(factory.orderPage().showDetails);
+		}
 		logger.info("Item was clicked on successfully");
 
 	}
@@ -145,6 +147,7 @@ public class RetailOrderSteps extends CommonUtility {
 
 	@When("User click on Cancel Order button")
 	public void userClickOnCancelOrderButton() {
+		
 		click(factory.orderPage().cancelOrderBttn);
 		logger.info("Cancel order button was clicked successfully");
 
@@ -161,17 +164,22 @@ public class RetailOrderSteps extends CommonUtility {
 
 	@When("User click on Return Items button")
 	public void userClickOnReturnItemsButton() {
+		if(factory.orderPage().showDetails.isDisplayed()) {
+			click(factory.orderPage().showDetails);
+		}
 		
 		
-		click(factory.orderPage().buyAgainBttn);
-		click(factory.orderPage().placeOrder);
-		click(factory.homepage().ordersOption);
+		
 		click(factory.orderPage().returnBttn);
+		
 		logger.info("Return button was clicked successfully");
 	}
 
 	@When("User select the Return Reason {string}")
 	public void userSelectTheReturnReasonItemDamaged(String message) {
+		
+		
+		
 		selectByVisibleText(factory.orderPage().returnDropdown, message);
 		logger.info("Item damaged option was selected with success");
 
@@ -186,13 +194,17 @@ public class RetailOrderSteps extends CommonUtility {
 
 	@When("User click on Return Order button")
 	public void userClickOnReturnOrderButton() {
+		
 		click(factory.orderPage().returnOrderBttn);
 		logger.info("Return order button was clicked successfully");
 	}
 
 	@Then("a cancelation message should be displayed as {string}")
-	public void aCancelationMessageShouldBeDisplayedReturnWasSuccessful(String message) {
+	public void aCancelationMessageShouldBeDisplayedReturnWasSuccessful(String message) throws InterruptedException {
 		waitTillPresence(factory.orderPage().returnOrderMsg);
+		Thread.sleep(3000);
+		
+		
 		Assert.assertEquals(message,factory.orderPage().returnOrderMsg.getText());
 		logger.info("Cancelation message" + message + "was displayed successfully");
 
