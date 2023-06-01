@@ -69,6 +69,9 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(xpath="//p[text()='Show Details']")
 	public WebElement itemInOrder;
 	
+	@FindBy(xpath="//input[@type='checkbox']")
+	public WebElement checkbox;
+	
 	@FindBy(id="cancelBtn")
 	public WebElement cancelBttn;
 	
@@ -84,16 +87,16 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(xpath="//p[text()='Your Order Has Been Cancelled']")
 	public WebElement orderCancelMsg;
 	
-	@FindBy(css="button#returnBtn")
+	@FindBy(xpath="//button[@id='returnBtn']")
 	public WebElement returnBttn;
 	
 	@FindBy(css="select#dropOffInput")
 	public WebElement dropoffDropdown;
 	
-	@FindBy(id="orderSubmitBtn")
+	@FindBy(xpath="//button[@id='orderSubmitBtn']")
 	public WebElement returnOrderBttn;
 	
-	@FindBy(xpath="//p[text()='Return was successfull']")
+	@FindBy(xpath="//div[@class='return__confirm-message']//p")
 	public WebElement returnOrderMsg;
 	
 	@FindBy(xpath="//button[text()='Review']")
@@ -116,4 +119,6 @@ public class RetailOrderPage extends BaseSetup {
 	
 	@FindBy(xpath="//button[text()='Buy again']")
 	public WebElement buyAgainBttn;
+	
+	
 }

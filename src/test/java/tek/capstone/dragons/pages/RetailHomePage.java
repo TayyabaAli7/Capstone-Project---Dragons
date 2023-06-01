@@ -23,7 +23,7 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(linkText = "Account")
 	public WebElement AccountBttn;
 
-	@FindBy(linkText = "Orders")
+	@FindBy(xpath="//a[text()='Orders']")
 	public WebElement ordersOption;
 
 	@FindBy(id = "logoutBtn")
