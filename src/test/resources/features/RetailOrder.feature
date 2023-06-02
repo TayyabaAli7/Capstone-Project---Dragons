@@ -1,4 +1,4 @@
-@Capston
+@Capstone
 
 Feature: Retail Order Page
 
